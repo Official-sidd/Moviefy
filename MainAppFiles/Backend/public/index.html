@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFy Home</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stylingComponents.css">
+<link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+      .footer{
+        width: 100%;
+        height: 30px;
+        line-height: 40px;
+      }
+
+      .container1{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+
+      .image{
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+      }
+
+      .container{
+        padding: 20px;
+      }
+
+      .image2{
+        height: 55px;
+        width: 55px;
+      }
+      .space{
+        padding: 30px;
+      }
+    </style>
+
+  </head>
+  <!-- navbar-light -->
+    <body class="d-flex flex-column min-vh-100 bg">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.html"><img class="image2" src="./images/logo.png" alt="logo"></a>
+        <!-- <a class="navbar-brand" href="movies.html">MovieFy</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav float-end ms-auto ml">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="suggest.html">Suggest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- d-flex align-items-center h-100 -->
+      
+      <!-- <div class="container mt-5 containerr"> -->
+        <!-- <div class="row "> -->
+          <div class=" col-md-6 mx-auto lower space">
+            <!-- onblur="showMovie() -->
+            <div class="form-group-spacing form-group justify-content-center ">
+              <input type="text" id="movieName" class="form-control" placeholder="Enter movie name" onkeyup="processChange()" >
+              <button onclick="processChange()" class="btn btn-primary">Search</button>
+            </div>
+          </div>
+
+            <div id="movieInfo" class="alert alert-info">
+  
+            </div>
+
+            <div class="aboutUs"></div>
+        <!-- </div> -->
+      <!-- </div> -->
+      <div class="avengers"></div>
+
+
+            <!-- aboutus -->
+            <section class="about" id="about">
+              <div class="glassy-text">
+              <h3>Who Are We ?</h3>
+              <p>
+                Our primary objective is to bring information of each and every movie possible to you.
+              </p>
+              <p>
+                All you have to do is type in the movie name and we will show you all the details of that particular movie. Remember to type in the name correctky or else you wont get the search result
+              </p>
+            </div>
+        </section>
+      
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑ Up</button>
+
+      <footer class="mt-auto bg-light py-3">
+          <p class="text-center text-dark">&copy; <a href="#"> MovieFy 2023 </a></p>
+      </footer>
+      
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
