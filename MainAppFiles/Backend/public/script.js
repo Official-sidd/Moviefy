@@ -1,4 +1,5 @@
-let apiKey = "4085dcbd";
+let apiKey = "";//add your api key here
+
 
 function searchMovie(name) {
   return fetch(
